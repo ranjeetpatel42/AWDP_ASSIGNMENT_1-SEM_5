@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+Mono:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: ease all 0.3s;
+}
+body {
+  color: white;
+}
+.grant-location img {
+  width: 2.5rem;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: "Poppins";
+}
+.tab.current-tab {
+  display: inline-block;
+  padding: 2px 10px;
+  background-color: #dbe2ef80;
+  border-radius: 5px;
+  border: none;
+}
+.tab:hover {
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  padding-top: 1rem;
+  width: 100vw;
+  height: 100ch;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #003e62,
+    #00666e,
+    #008a54,
+    #7ea623
+  );
+}
+
+.tab-container {
+  display: flex;
+  align-items: center;
+  gap: 13rem;
+  margin: 40px;
+}
+
+.loading-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* grant location conainer */
+.grant-location-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  padding: 5px;
+  transition: ease all 0.3s;
+}
+.grant-Access-desc {
+  font-size: 10px;
+}
+.grant-location-container img {
+  background-color: green;
+  padding: 12px;
+  margin: 5px 0;
+  border-radius: 50%;
+}
+
+.grantAccess-btn {
+  display: inline-block;
+  padding: 6px 15px;
+  margin-top: 1rem;
+  background-color: #dbe2ef80;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-family: "Poppins";
+}
+
+.grant-Location-head {
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* search bar */
+.form-container {
+  text-align: center;
+  width: auto;
+  padding: 0.5rem;
+  margin-top: 0.8rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 30rem;
+  display: none;
+}
+
+.form-container input {
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 3px 8px;
+  outline: none;
+  font-family: "Poppins";
+  border-radius: 10px;
+  border: none;
+  background-color: #dbe2ef80;
+  color: white;
+}
+.form-container input:focus {
+  outline: none;
+}
+
+.form-container button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbe2ef80;
+  cursor: pointer;
+}
+
+/* use info container */
+.user-infor-container {
+  width: auto;
+  height: auto;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  /* background-color: #00666e; */
+  margin: 0;
+  padding: 1rem;
+  transition: ease all 0.3s;
+}
+
+.Cityname {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+}
+.Cityname p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+
+p[data-weatherDesc] {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0;
+}
+
+p[data-temprature] {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0;
+}
+
+.parameter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.parameter {
+  width: 170px;
+  background-color: #dbe2ef80;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+.parameter p,
+.parameter img {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 2px 0;
+  text-transform: capitalize;
+}
+.parameter img {
+  width: 50px;
+}
